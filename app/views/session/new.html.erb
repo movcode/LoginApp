@@ -1,0 +1,10 @@
+<%= form_tag(:session_create) do %>
+<%= label_tag("Email:") %>
+<%= email_field_tag(:email) %>
+<%= label_tag("Senha:") %>
+<%= password_field_tag(:password) %>
+<br>
+<%= submit_tag("Login") %>
+<% end %>
+
+<p id="notice"><%= notice %></p>
